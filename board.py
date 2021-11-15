@@ -45,8 +45,8 @@ class Board:
 
     def checkWinner(self, player):
 
-        width = self.board.numOfCol
-        height = self.board.numOfRows
+        width = self.numOfCol
+        height = self.numOfRows
         for c in range(width):
             for r in range(height):
                 
