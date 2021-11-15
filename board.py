@@ -62,7 +62,7 @@ class Board:
                         return True
 
                     # look down and right
-                    if player == self.board[c+1][r+1] and player == self.board[c+2][r+2] and player == self.board[c+3][r+3]:
+                    if c + 3 < width and player == self.board[c+1][r+1] and player == self.board[c+2][r+2] and player == self.board[c+3][r+3]:
                         return True
                     
                     # look down and left
