@@ -1,0 +1,151 @@
+.disable-select, .message-board {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.difficulty{
+    font-size: 10em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.difficulty p{
+    font-size: 50px;
+}
+
+.arrow{
+    font-size:0.25em;
+    cursor: pointer;
+}
+
+.message{
+    text-align: center;
+    padding: 20px;
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.green-background{
+    background-color: #3adb76;
+    color: #0a0a0a;
+}
+
+.red-background{
+    background-color:rgb(226, 37, 43);
+}
+
+.message-board{
+    margin-top: 6em;
+}
+
+.game-option{
+    margin-top: 1em;
+    width: 80%;
+    margin-left: 10%;
+}
+
+h1 {
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.board-container{
+    margin: 0 auto;
+    width: 45em;
+    
+}
+
+.top-row{
+    padding: 0 1.5em;
+
+}
+
+
+
+.board{
+    background-color: #0052CC;
+    padding: 1em 1.5em 0 1.5em;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 6em 6em 6em 6em 6em 6em 6em;
+}
+
+.board-item{
+    width: 6em;
+    height: 6em;
+}
+
+.chip{
+    width: 90%;
+    height: 90%;
+    border-radius: 100%;
+    cursor: pointer;
+    color: white;
+    margin: auto;
+
+}
+
+.board-item.bottom{
+    background-color: white;
+    border-top: 0.3em solid #0052CC;
+}
+
+.board-item.top{
+    background-color: white;
+    border: none
+}
+
+/* Animation */
+.drop-chips{
+    position: relative;
+    animation-name: drop-chips;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes drop-chips {
+    0%{
+        top: 0em;
+    }
+    100%{
+        top: 40em;
+    }
+}
+
+.raise-chips{
+    position: relative;
+    animation-name: raise-chips;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+@keyframes raise-chips {
+    0%{
+        top: 40em;
+    }
+    100%{
+        top: 0em;
+    }
+}
+
+
+@media only screen and (max-width: 1300px){
+    .message-board{
+        width: 100% !important;
+    }
+}
+
+
+
