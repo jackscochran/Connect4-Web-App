@@ -1,0 +1,2 @@
+# Connect-4 Web App
+An implimentation of the game Connect-4 using React for the front-end and Python with Flask for the back-end. In the game you play against bots that make thier moves based on the mini-max algorithm, which works by considering all possible moves and outcomes and selecting the move that leads to the best outcome, assuming that the opponent will also play optimally.
